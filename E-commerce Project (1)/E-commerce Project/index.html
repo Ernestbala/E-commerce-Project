@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="all-tailwind-classes-full-min.css" />
+
+    <title>Ecommerce Site</title>
+
+    <!-- HTML -->
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-stone-300">
+    <section class="w-full fixed top-0 backdrop-blur-sm z-50">
+      <div
+        class="flex w-full h-full mx-auto max-w-400 gap-5 items-center justify-between px-4 py-5"
+      >
+        <a href="index.html" class="font-bold text-green-600 text-3xl inline">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 inline"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
+            />
+          </svg>
+
+          Logo
+        </a>
+
+        <nav class="hidden md:flex gap-8 text-base h-full font-semibold">
+          <ul class="flex gap-7 h-full">
+            <li class="h-full">
+              <a
+                href=""
+                class="h-full inline-flex items-center px-2 hover:text-lg hover:text-green-600 transition-all duration-300"
+                >Feature</a
+              >
+            </li>
+            <li class="h-full">
+              <a
+                href=""
+                class="h-full inline-flex items-center px-2 hover:text-lg hover:text-green-600 transition-all duration-300"
+                >Products</a
+              >
+            </li>
+            <li class="h-full">
+              <a
+                href=""
+                class="h-full inline-flex items-center px-2 hover:text-lg hover:text-green-600 transition-all duration-300"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="block md:hidden">
+          <div
+            id="menu-bar"
+            class="p-2 border border-dashed hover:border-green-600 group/bar"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+
+          <div
+            id="mobile-menu"
+            class="hidden fixed w-full left-0 top-25 backdrop-blur-sm h-200 bg-stone-400/40"
+          >
+            <nav
+              class="flex flex-col gap-8 text-2xl h-full w-full p-10 items-center font-semibold"
+            >
+              <ul class="flex flex-col gap-10 w-full items-center">
+                <li class="h-full">
+                  <a
+                    href="index.html#feature"
+                    class="h-full inline-flex items-center px-2 hover:text-lg hover:text-green-600 transition-all duration-300"
+                    >Feature</a
+                  >
+                </li>
+                <li class="h-full">
+                  <a
+                    href="index.html#products"
+                    class="h-full inline-flex items-center px-2 hover:text-lg hover:text-green-600 transition-all duration-300"
+                    >Products</a
+                  >
+                </li>
+                <li class="h-full">
+                  <a
+                    href="index.html#contactUs"
+                    class="h-full inline-flex items-center px-2 hover:text-lg hover:text-green-600 transition-all duration-300"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section
+        class="bg-stone-700 rounded-lg w-full mx-auto flex gap-5 justify-between items-center h-screen min-h-[750px] mt-25 ">
+
+        <div class="hidden sm:block py-5 px-8 w-1/2 space-y-5 sm:space-y-8 sm:space-y-15 lg:max-w-3xl lg:ml-auto  ">
+
+            <div class="text-base md:text-lg xl:text-2xl text-stone-300">
+                <div>
+                    1M+ <span class=" text-yellow-500 font-medium">Customers</span>
+
+                </div>
+                <a href="about.html" class="text-sm hover:underline">
+                    Read our success story
+                </a>
+            </div>
+            <h1
+                class="hidden sm:inline-block text-7xl md:text-[5rem] lg:text-[6rem] xl:text-[6.7rem] 2xl:text-[7.1rem] font-[cursive] py-2 text-stone-400 ">
+                Buy
+                Cassy, Look
+                Classy
+
+            </h1>
+
+            <h1 class="inline-block sm:hidden text-7xl font-[cursive] py-2 text-stone-400">
+                Choose
+                Classy
+
+            </h1>
+            <div
+                class="text-sm w-full max-w-sm lg:max-w-lg 2xl:max-w-xl 3xl:max-w-2xl text-stone-500 hidden sm:block lg:tracking-wider">
+                Cassy wristwatches are more than
+                timekeeping devices but fashion statements that elevate your overall look. They
+                now come with fitness-tracking, notifications, and GPS, making them an essential companion for your
+                fashion and
+                practicality.
+            </div>
+            <div>
+                <button
+                    class="bg-yellow-600 text-white  py-3 rounded-lg mt-3 w-full max-w-lg xl:max-w-xl text-center font-semibold text-lg xl:text-xl cursor-pointer hover:bg-white hover:text-yellow-600 transition-all ">Shop
+                    Now</button>
+            </div>
+        </div>
+
+        <div class="w-full sm:w-1/2 overflow-hidden flex justify-center items-center h-full relative shadow relative">
+
+            <div class=" sm:hidden space-y-3 absolute z-30 top-1/4 px-6">
+                <div class="text-base md:text-lg xl:text-2xl text-stone-300">
+                    <div>
+                        1M+ <span class=" text-yellow-500 font-medium">Customers</span>
+
+                    </div>
+                    <a href="about.html" class="text-sm hover:underline">
+                        Read our success story
+                    </a>
+                </div>
+
+                <h1 class="inline-block sm:hidden text-7xl font-[cursive] py-2 text-stone-400">
+                    Choose
+                    Classy
+
+                </h1>
+
+                <div>
+                    <button
+                        class="bg-yellow-600 text-white  py-3 rounded-lg mt-3 w-full max-w-lg xl:max-w-xl text-center font-semibold text-lg xl:text-xl cursor-pointer hover:bg-transparent hover:border-yellow-600 hover:border hover:text-yellow-600 transition-all ">Shop
+                        Now</button>
+                </div>
+            </div>
+            <img src="https://unsplash.com/photos/silver-and-white-round-analog-watch-LWPPpkn6NEQ"
+                alt="Image" class="w-full rounded-l-lg object-cover h-full -rotate-y-180 ">
+
+            <div class="absolute top-8 left-5 h-40 w-40 rounded-2xl ooverflow-hidden">
+                <img src="https://images.unsplash.com/photo-1577993944451-f8618a835822?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHdyaXN0d2F0Y2h8ZW58MHx8MHx8fDA%3D"
+                    class="w-full object-cover h-full w-full rounded-xl " />
+            </div>
+            <div class="absolute bottom-8 right-5 h-40 w-40 rounded-2xl ooverflow-hidden shadow">
+                <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdyaXN0d2F0Y2h8ZW58MHx8MHx8fDA%3D"
+                    class="w-full object-cover h-full w-full rounded-xl " />
+            </div>
+
+
+        </div>
+    </section>    
+    
+    
+    <section class="py-7">
+        <marquee>
+            <div class="space-x-12 text-xl font-semibold uppercase">
+                <span>
+                    Omega
+                </span>
+                <span>
+                    Rolex
+                </span>
+                <span>
+                    Patek Philippe
+                </span>
+                <span>
+                    Audemars Piguet
+                </span>
+                <span>
+                    Vacheron Constantin
+                </span>
+
+                <span>
+                    Cartier
+                </span>
+                <span>
+                    Breguet
+                </span>
+                <span>
+                    Casio
+                </span>
+                <span>
+                    Fossil
+                </span>
+                <span>
+                    Diesel
+                </span>
+                <span>
+                    Nixon
+                </span>
+            </div>
+        </marquee>
+
+    </section>
+    
+    <section class="w-full max-w-400 mx-auto px-4 py-10 h-full h-full space-y-20" id="feature">
+        <div class="space-y-6" id="collections">
+
+
+            <h4 class="text-center font-semibold text-2xl">Collections</h4>
+            <div class="w-full  overflow-x-scroll whitespace-nowrap relative scroll-smooth space-x-6 no-scrollbar ">
+
+                <a
+                    class="inline-block w-[230px] md:w-[240px] lg:w-[280px] h-70 cursor-pointer relative text-wrap rounded-lg overflow-hidden relative group/1 ">
+
+                    <div class="h-full w-full">
+                        <img src="https://images.unsplash.com/photo-1708247804802-6851ddd47234?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdyaXN0d2F0Y2h8ZW58MHx8MHx8fDA%3D"
+                            class="object-cover h-full w-full object-cover group-hover/1:scale-105 transition-all duration-400 ease-in-out" />
+                    </div>
+                    <div
+                        class="absolute bottom-3 px-3 w-full text-left text-stone-400 text-2xl font-bold blackdrop-blur-md group-hover/1:text-yellow-500 ">
+                        Luxury
+                    </div>
+                    <div class="absolute inset-0 h-full w-full bg-stone-600/20"></div>
+
+
+                </a>
+
+                <a
+                    class="inline-block w-[230px] md:w-[240px] lg:w-[280px] h-70 cursor-pointer relative text-wrap rounded-lg overflow-hidden relative group/2 ">
+
+                    <div class="h-full w-full">
+                        <img src="https://images.unsplash.com/photo-1609684963134-b70db0a3c8fe?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdyaXN0d2F0Y2h8ZW58MHx8MHx8fDA%3D"
+                            class="object-cover h-full w-full object-cover group-hover/2:scale-105 transition-all duration-400 ease-in-out" />
+                    </div>
+                    <div
+                        class="absolute bottom-3 px-3 w-full text-left text-stone-400 text-2xl font-bold blackdrop-blur-md group-hover/2:text-yellow-500">
+                        Events
+                    </div>
+                    <div class="absolute inset-0 h-full w-full bg-stone-600/20"></div>
+
+                </a>
+
+
+                <a
+                    class="inline-block w-[230px] md:w-[240px] lg:w-[280px] h-70 cursor-pointer relative text-wrap rounded-lg overflow-hidden relative group/3 ">
+
+                    <div class="h-full w-full">
+                        <img src="https://images.unsplash.com/photo-1595923533867-ff8a01335ff9?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdyaXN0d2F0Y2h8ZW58MHx8MHx8fDA%3D"
+                            class="object-cover h-full w-full object-cover group-hover/3:scale-105 transition-all duration-400 ease-in-out" />
+                    </div>
+                    <div
+                        class="absolute bottom-3 px-3 w-full text-left text-stone-400 text-2xl font-bold blackdrop-blur-md group-hover/3:text-yellow-500 ">
+                        Ancient
+                    </div>
+                    <div class="absolute inset-0 h-full w-full bg-stone-600/20"></div>
+
+                </a>
+
+                <a
+                    class="inline-block w-[230px] md:w-[240px] lg:w-[280px] h-70 cursor-pointer relative text-wrap rounded-lg overflow-hidden relative group/4 ">
+
+                    <div class="h-full w-full">
+                        <img src="https://images.unsplash.com/photo-1637160151663-a410315e4e75?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c21hcnQlMjB3YXRjaHxlbnwwfHwwfHx8MA%3D%3D"
+                            class="object-cover h-full w-full object-cover group-hover/4:scale-105 transition-all duration-400 ease-in-out" />
+                    </div>
+                    <div
+                        class="absolute bottom-3 px-3 w-full text-left text-stone-400 text-2xl font-bold blackdrop-blur-md  group-hover/4:text-yellow-500">
+                        Smart
+                    </div>
+                    <div class="absolute inset-0 h-full w-full bg-stone-600/20"></div>
+
+                </a>
+
+                <a
+                    class="inline-block w-[230px] md:w-[240px] lg:w-[280px] h-70 cursor-pointer relative text-wrap rounded-lg overflow-hidden relative group/5 ">
+
+                    <div class="h-full w-full">
+                        <img src="https://images.unsplash.com/photo-1691439378545-dd6b35ff2f7b?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3BvcnQlMjB3YXRjaHxlbnwwfHwwfHx8MA%3D%3D"
+                            class="object-cover h-full w-full object-cover group-hover/5:scale-105 transition-all duration-400 ease-in-out" />
+                    </div>
+                    <div
+                        class="absolute bottom-3 px-3 w-full text-left text-stone-400 text-2xl font-bold blackdrop-blur-md group-hover/5:text-yellow-500">
+                        Sport
+                    </div>
+                    <div class="absolute inset-0 h-full w-full bg-stone-600/20"></div>
+
+                </a>
+
+
+                <a
+                    class="inline-block w-[230px] md:w-[240px] lg:w-[280px] h-70 cursor-pointer relative text-wrap rounded-lg overflow-hidden relative group/6 ">
+
+                    <div class="h-full w-full">
+                        <img src="https://images.unsplash.com/photo-1714217721534-6763dc085309?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWVjaGFuaWNhbCUyMHdhdGNofGVufDB8fDB8fHww"
+                            class="object-cover h-full w-full object-cover group-hover/6:scale-105 transition-all duration-400 ease-in-out" />
+                    </div>
+                    <div
+                        class="absolute bottom-3 px-3 w-full text-left text-stone-400 text-2xl font-bold blackdrop-blur-md group-hover/6:text-yellow-500">
+                        Mechanical
+                    </div>
+                    <div class="absolute inset-0 h-full w-full bg-stone-600/20"></div>
+
+                </a>
+                
+                <a
+                    class="inline-block w-[230px] md:w-[240px] lg:w-[280px] h-70 cursor-pointer relative text-wrap rounded-lg overflow-hidden relative group/6 ">
+
+                    <div class="h-full w-full">
+                        <img src="https://unsplash.com/photos/silver-and-white-round-analog-watch-2Yj6MBvJ0sg"
+                            class="object-cover h-full w-full object-cover group-hover/6:scale-105 transition-all duration-400 ease-in-out" />
+                    </div>
+                    <div
+                        class="absolute bottom-3 px-3 w-full text-left text-stone-400 text-2xl font-bold blackdrop-blur-md group-hover/6:text-yellow-500">
+                        Stopwatch
+                    </div>
+                    <div class="absolute inset-0 h-full w-full bg-stone-600/20"></div>
+
+                </a>
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="space-y-6" id="new-arrival">
+            <h4 class="text-center font-semibold text-2xl">New Arrivals</h4>
+
+            <div class="w-full  overflow-x-scroll whitespace-nowrap relative scroll-smooth space-x-6 no-scrollbar">
+                <!-- <h3>Collections</h3> -->
+
+                <a
+                    class="inline-block w-[210px] md:w-[220px] lg:w-[240px] h-70 cursor-pointer relative text-wrap rounded-lg overflow-hidden relative group/10 ">
+
+                    <div class=" w-full h-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1691921673576-07c6032e6306?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c3BvcnQlMjB3YXRjaHxlbnwwfHwwfHx8MA%3D%3D"
+                            class="object-cover h-full w-full object-cover group-hover/10:scale-105 transition-all duration-400 ease-in-out rounded-t-lg" />
+                    </div>
+                    <div class=" w-full text-left px-2 pt-2 text-lg font-bold blackdrop-blur-md  ">
+                        <span class="block limit-text" data-max="20">
+                            Lorem ipsum, dolor sit amet dolor sit amet
+                        </span>
+                        <span class="text-amber-600">
+                            ₦15,000
+                        </span>
+                    </div>
+                    <div class="absolute inset-0 h-full w-full bg-stone-600/20"></div>
+
+
+                </a>
+
+                <a
+                    class="inline-block w-[210px] md:w-[220px] lg:w-[240px] h-70 cursor-pointer relative text-wrap rounded-lg overflow-hidden relative group/11 ">
+
+                    <div class=" w-full h-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1669480380743-f76990b9bc44?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3BvcnQlMjB3YXRjaHxlbnwwfHwwfHx8MA%3D%3D"
+                            class="object-cover h-full w-full object-cover group-hover/11:scale-105 transition-all duration-400 ease-in-out rounded-t-lg" />
+                    </div>
+                    <div class=" w-full text-left px-2 pt-2 text-lg font-bold blackdrop-blur-md  ">
+                        <span class="block limit-text" data-max="20">
+                            Iure delectus nemo dolores tempore ex repellendus commodi esse fugit
+                        </span>
+                        <span class="text-amber-600">
+                            ₦75,000
+                        </span>
+                    </div>
+                    <div class="absolute inset-0 h-full w-full bg-stone-600/20"></div>
+
+
+                </a>
+
+
+                <a
+                    class="inline-block w-[210px] md:w-[220px] lg:w-[240px] h-70 cursor-pointer relative text-wrap rounded-lg overflow-hidden relative group/12 ">
+
+                    <div class=" w-full h-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1676554565987-524692127b1a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNwb3J0JTIwd2F0Y2h8ZW58MHx8MHx8fDA%3D"
+                            class="object-cover h-full w-full object-cover group-hover/12:scale-105 transition-all duration-400 ease-in-out rounded-t-lg" />
+                    </div>
+                    <div class=" w-full text-left px-2 pt-2 text-lg font-bold blackdrop-blur-md  ">
+                        <span class="block limit-text" data-max="20">
+                            Poluptatem, quae,
+                            facilis praesentium illo porro
+                        </span>
+                        <span class="text-amber-600">
+                            ₦98,000
+                        </span>
+                    </div>
+                    <div class="absolute inset-0 h-full w-full bg-stone-600/20"></div>
+
+
+                </a>
+
+                <a
+                    class="inline-block w-[210px] md:w-[220px] lg:w-[240px] h-70 cursor-pointer relative text-wrap rounded-lg overflow-hidden relative group/13 ">
+
+                    <div class=" w-full h-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1706289835536-3aa7b81aa2fd?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHNwb3J0JTIwd2F0Y2h8ZW58MHx8MHx8fDA%3D"
+                            class="object-cover h-full w-full object-cover group-hover/13:scale-105 transition-all duration-400 ease-in-out rounded-t-lg" />
+                    </div>
+                    <div class=" w-full text-left px-2 pt-2 text-lg font-bold blackdrop-blur-md  ">
+                        <span class="block limit-text" data-max="20">
+                            Uipsum velit nisi laboriosam ad asperiores
+                        </span>
+                        <span class="text-amber-600">
+                            ₦195,000
+                        </span>
+                    </div>
+                    <div class="absolute inset-0 h-full w-full bg-stone-600/20"></div>
+
+
+                </a>
+
+                <a
+                    class="inline-block w-[210px] md:w-[220px] lg:w-[240px] h-70 cursor-pointer relative text-wrap rounded-lg overflow-hidden relative group/14 ">
+
+                    <div class=" w-full h-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1639564879163-a2a85682410e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHNwb3J0JTIwd2F0Y2h8ZW58MHx8MHx8fDA%3D"
+                            class="object-cover h-full w-full object-cover group-hover/14:scale-105 transition-all duration-400 ease-in-out rounded-t-lg" />
+                    </div>
+                    <div class=" w-full text-left px-2 pt-2 text-lg font-bold blackdrop-blur-md  ">
+                        <span class="block limit-text" data-max="20">
+                            Poluptatem, quae,
+                            facilis praesentium illo porro
+                        </span>
+                        <span class="text-amber-600">
+                            ₦48,000
+                        </span>
+                    </div>
+                    <div class="absolute inset-0 h-full w-full bg-stone-600/20"></div>
+
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="space-y-6" id="best-selling">
+            <h4 class="text-center font-semibold text-2xl">Best Selling</h4>
+
+            <div class="w-full  overflow-x-scroll whitespace-nowrap relative scroll-smooth space-x-6 no-scrollbar">
+                <!-- <h3>Collections</h3> -->
+
+                <a
+                    class="inline-block w-[230px] md:w-[240px] lg:w-[260px] h-70 cursor-pointer relative text-wrap rounded-lg overflow-hidden relative group/20 ">
+
+                    <span></span>
+
+                    <div class=" w-full h-50 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1660844817855-3ecc7ef21f12?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0& ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNtYXJ0JTIwd2F0Y2h8ZW58MHx8MHx8fDA%3D"
+                            class="object-cover h-full w-full object-cover group-hover/20:scale-105 transition-all duration-400 ease-in-out rounded-t-lg" />
+
+
+                    </div>
+                    <div class=" w-full text-left px-2 pt-2 text-lg font-bold blackdrop-blur-md  ">
+                        <span class="block limit-text" data-max="20">
+                            Lorem ipsum, dolor sit amet dolor sit amet
+                        </span>
+                        <span class="text-amber-600">
+                            ₦75,000
+                        </span>
+                    </div>
+                    <div class="absolute inset-0 h-full w-full bg-stone-600/20"></div>
+
+
+                </a>
+
+                <a
+                    class="inline-block w-[210px] md:w-[220px] lg:w-[240px] h-70 cursor-pointer relative text-wrap rounded-lg overflow-hidden relative group/21 ">
+
+                    <div class=" w-full h-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNtYXJ0JTIwd2F0Y2h8ZW58MHx8MHx8fDA%3D"
+                            class="object-cover h-full w-full object-cover group-hover/21:scale-105 transition-all duration-400 ease-in-out rounded-t-lg" />
+                    </div>
+                    <div class=" w-full text-left px-2 pt-2 text-lg font-bold blackdrop-blur-md  ">
+                        <span class="block limit-text" data-max="20">
+                            Iure delectus nemo dolores tempore ex repellendus commodi esse fugit
+                        </span>
+                        <span class="text-amber-600">
+                            ₦95,000
+                        </span>
+                    </div>
+                    <div class="absolute inset-0 h-full w-full bg-stone-600/20"></div>
+
+
+                </a>
+
+
+                <a
+                    class="inline-block w-[210px] md:w-[220px] lg:w-[240px] h-70 cursor-pointer relative text-wrap rounded-lg overflow-hidden relative group/22 ">
+
+                    <div class=" w-full h-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1579721840641-7d0e67f1204e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHNtYXJ0JTIwd2F0Y2h8ZW58MHx8MHx8fDA%3D"
+                            class="object-cover h-full w-full object-cover group-hover/22:scale-105 transition-all duration-400 ease-in-out rounded-t-lg" />
+                    </div>
+                    <div class=" w-full text-left px-2 pt-2 text-lg font-bold blackdrop-blur-md  ">
+                        <span class="block limit-text" data-max="20">
+                            Poluptatem, quae,
+                            facilis praesentium illo porro
+                        </span>
+                        <span class="text-amber-600">
+                            ₦58,000
+                        </span>
+                    </div>
+                    <div class="absolute inset-0 h-full w-full bg-stone-600/20"></div>
+
+
+                </a>
+
+                <a
+                    class="inline-block w-[210px] md:w-[220px] lg:w-[240px] h-70 cursor-pointer relative text-wrap rounded-lg overflow-hidden relative group/23 ">
+
+                    <div class=" w-full h-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1557438159-51eec7a6c9e8?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHNtYXJ0JTIwd2F0Y2h8ZW58MHx8MHx8fDA%3D"
+                            class="object-cover h-full w-full object-cover group-hover/23:scale-105 transition-all duration-400 ease-in-out rounded-t-lg" />
+                    </div>
+                    <div class=" w-full text-left px-2 pt-2 text-lg font-bold blackdrop-blur-md  ">
+                        <span class="block limit-text" data-max="20">
+                            Uipsum velit nisi laboriosam ad asperiores
+                        </span>
+                        <span class="text-amber-600">
+                            ₦175,000
+                        </span>
+                    </div>
+                    <div class="absolute inset-0 h-full w-full bg-stone-600/20"></div>
+
+
+                </a>
+
+                <a
+                    class="inline-block w-[210px] md:w-[220px] lg:w-[240px] h-70 cursor-pointer relative text-wrap rounded-lg overflow-hidden relative group/24 ">
+
+                    <div class=" w-full h-50 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1617043786394-f977fa12eddf?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNtYXJ0JTIwd2F0Y2h8ZW58MHx8MHx8fDA%3D"
+                            class="object-cover h-full w-full object-cover group-hover/24:scale-105 transition-all duration-400 ease-in-out rounded-t-lg" />
+                    </div>
+                    <div class=" w-full text-left px-2 pt-2 text-lg font-bold blackdrop-blur-md  ">
+                        <span class="block limit-text" data-max="20">
+                            Poluptatem, quae,
+                            facilis praesentium illo porro
+                        </span>
+                        <span class="text-amber-600">
+                            ₦48,000
+                        </span>
+                    </div>
+                    <div class="absolute inset-0 h-full w-full bg-stone-600/20"></div>
+
+
+                </a>
+
+            </div>
+        </div>
+
+
+    </section>
+    
+    <section>
+        <footer class="bg-stone-700 text-stone-400 space-y-5 py-8 px-4">
+            <div class="w-full max-w-400 mx-auto  flex gap-8">
+
+                <!-- Brand -->
+                <div class="">
+                    <div class="text-yellow-600 text-3xl font-bold inline">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6 inline">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                        </svg>
+
+
+                        Logo
+                    </div>
+
+                    <p class="text-sm max-w-xs mt-4">Timeless craftsmanship. Modern precision. Elevate your style with
+                        every
+                        second.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="space-y-2">
+                    <h3 class="font-medium">Explore</h3>
+                    <ul class="space-y-1">
+                        <li class="hover:text-yellow-600"><a href="index.html">Home</a></li>
+
+                        <li class="hover:text-yellow-600"><a href="index.html#collections">Collections</a></li>
+                        <li class="hover:text-yellow-600"><a href="index.html#best-selling">Best Selling</a></li>
+                        <li class="hover:text-yellow-600"><a href="index.html#new-arrival">New Arrivals</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="space-y-2">
+                    <h3 class="font-medium">Support</h3>
+                    <ul class="space-y-1">
+                        <li class="hover:text-yellow-600"><a href="#">Contact Us</a></li>
+                        <li class="hover:text-yellow-600"><a href="#">Shipping & Returns</a></li>
+                        <li class="hover:text-yellow-600"><a href="#">Warranty</a></li>
+                        <li class="hover:text-yellow-600"><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="space-y-2">
+                    <h3 class="font-medium">Stay Updated</h3>
+                    <p class="text-sm">Get exclusive offers and latest releases.</p>
+                    <form>
+                        <input class="border border-stone-500 rounded px-4 py-2" type="email"
+                            placeholder="Enter your email" required />
+                        <button type="submit"
+                            class="bg-yellow-600 py-2 text-sm px-2 rounded cursor-pointer hover:text-yellow-600 hover:bg-transparent hover:border-yellow-600 hover:border transition-all duration-300 text-white">Subscribe</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="w-full max-w-400 mx-auto ">
+                <p>© 2026 Logo. All rights reserved.</p>
+            </div>
+        </footer>
+    </section>    
+    
+    
+    
+
+    <div id="navbar"></div>
+    <div id="hero"></div>
+    <div id="marquee"></div>
+
+    <main>
+      <div id="feature"></div>
+    </main>
+
+    <div id="footer"></div>
+
+    <!-- Project -->
+    <script type="module" src="js/main.js"></script>
+
+    <script>
+        document.getElementById("menu-bar").addEventListener("click", (e) => {
+
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+
+        function limitStr(str, max = 20) {
+            if (!str) return "";
+            return str.length > max ? str.substring(0, max).split(' ').slice(0, -1).join(' ') + '...' : str;
+        }
+
+        document.querySelectorAll(".limit-text").forEach(el => {
+
+            const max = el.dataset.max || 20;
+            el.innerText = limitStr(el.innerText, max);
+            console.log(limitStr(el.innerText, max));
+        });
+    </script>
+
+
+  </body>
+</html>
